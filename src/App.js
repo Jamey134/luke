@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Search from './components/Search';
 import Characters from './components/Characters';
 import Planets from './components/Planets';
+import Error from './components/Error';
+
 
 function App() {
   return (
@@ -15,11 +16,10 @@ function App() {
       <>
       <Search/>
       
-
       <Routes>
         <Route path="/characters/:characterid" element = {<Characters/>}></Route>
-        <Route path = "/Characters" element ={<p>Characters</p>}></Route>
-        
+        <Route path = "/planets/:planetid" element ={<Planets/>}></Route>
+        <Route path='/error' element = {<Error/>} ></Route>
       </Routes>
       </>
     </div>

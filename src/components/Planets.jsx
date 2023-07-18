@@ -37,8 +37,8 @@ const Planets = () => {
 
         <>
             <h1>{name}</h1>
-            <p>Diameter: {diameter} cm</p>
-            <p>Climate: {climate} kg</p>
+            <p>Diameter: {diameter}</p>
+            <p>Climate: {climate}</p>
             <p>Terrain: {terrain}</p>
             <p>Population: {population}</p>
         </>
